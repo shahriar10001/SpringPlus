@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>HTSN</artifactId>
+        <groupId>com.Appplication</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>RestAPI</artifactId>
+    <packaging>war</packaging>
+
+    <properties>
+        <Htsn.version>1.0-SNAPSHOT</Htsn.version>
+        <swagger>2.9.2</swagger>
+    </properties>
+
+    <dependencies>
+        <!--**********************APPLICATION dependency ************************-->
+        <dependency>
+            <groupId>com.Appplication</groupId>
+            <artifactId>IService</artifactId>
+            <version>${Htsn.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+
+        <!--**********************SPRING COMPONENT SCAN************************-->
+        <dependency>
+            <groupId>com.Appplication</groupId>
+            <artifactId>Dao</artifactId>
+            <version>${Htsn.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.Appplication</groupId>
+            <artifactId>Core</artifactId>
+            <version>${Htsn.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- ****************************  swagger  ************************************ -->
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>23.0</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <url>http://185.187.51.38:8081/manager/text</url>
+                    <!--<url>http://localhost:8081/manager/text</url>-->
+                    <!--<url>http://192.168.188.133:8081/manager/text</url>-->
+                    <server>TomcatServer</server>
+                    <path>/api</path>
+                    <update>true</update>
+                    <username>tomcat</username>
+                    <password>123!@#qwe</password>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

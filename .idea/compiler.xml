@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Core" />
+        <module name="Dao" />
+        <module name="IRepository" />
+        <module name="IService" />
+        <module name="RestAPI" />
+        <module name="WebUI" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Core" target="1.8" />
+      <module name="Dao" target="1.8" />
+      <module name="EBrokerDaoEntity" target="1.8" />
+      <module name="EBrokerDomainEntity" target="1.8" />
+      <module name="HTSN" target="1.8" />
+      <module name="IMessaging" target="1.8" />
+      <module name="IRepository" target="1.8" />
+      <module name="IService" target="1.8" />
+      <module name="RepoViewModel" target="1.8" />
+      <module name="RestAPI" target="1.8" />
+      <module name="ServiceViewModel" target="1.8" />
+      <module name="WebUI" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Domains/DomainName/Core/Core.iml" filepath="$PROJECT_DIR$/Domains/DomainName/Core/Core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Domains/DomainName/Dao/Dao.iml" filepath="$PROJECT_DIR$/Domains/DomainName/Dao/Dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HTSN.iml" filepath="$PROJECT_DIR$/HTSN.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Facade/IRepository/IRepository.iml" filepath="$PROJECT_DIR$/Facade/IRepository/IRepository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Facade/IService/IService.iml" filepath="$PROJECT_DIR$/Facade/IService/IService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Presentation/RestAPI/RestAPI.iml" filepath="$PROJECT_DIR$/Presentation/RestAPI/RestAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Presentation/WebUI/WebUI.iml" filepath="$PROJECT_DIR$/Presentation/WebUI/WebUI.iml" />
+    </modules>
+  </component>
+</project>
